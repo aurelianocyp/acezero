@@ -1,46 +1,3 @@
-# ACE0 (ACE Zero)
-
-This repository contains the code associated to the ACE0 paper:
-> **Scene Coordinate Reconstruction: 
-Posing of Image Collections via Incremental Learning of a Relocalizer**
-> 
-> [Eric Brachmann](https://ebrach.github.io/), 
-> [Jamie Wynn](https://scholar.google.com/citations?user=ASP-uu4AAAAJ&hl=en), 
-> [Shuai Chen](https://chenusc11.github.io/), 
-> [Tommaso Cavallari](https://scholar.google.it/citations?user=r7osSm0AAAAJ&hl=en), 
-> [Áron Monszpart](https://amonszpart.github.io/), 
-> [Daniyar Turmukhambetov](https://dantkz.github.io/about/), and 
-> [Victor Adrian Prisacariu](https://www.robots.ox.ac.uk/~victor/)
-> 
-> ECCV 2024, Oral
-
-For further information please visit:
-
-- [Project page (with a method overview and videos)](https://nianticlabs.github.io/acezero)
-- [Arxiv](https://arxiv.org/abs/2404.14351)
-
-Table of contents:
-
-- [Installation](#installation)
-- [Usage](#usage)
-    - [Basic Usage](#basic-usage)
-    - [Visualization Capabilities](#visualization-capabilities)
-    - [Advanced Use Cases](#advanced-use-cases)
-      - [Refine Existing Poses](#refine-existing-poses)
-      - [Start From a Partial Reconstruction](#start-from-a-partial-reconstruction)
-      - [Self-Supervised Relocalization](#self-supervised-relocalization)
-      - [Train NeRF models or Gaussian splats](#train-nerf-models-or-gaussian-splats)
-    - [Utility Scripts](#utility-scripts)
-- [Benchmark](#benchmark)
-  - [Nerfacto](#nerfacto)
-  - [Splatfacto](#splatfacto)
-- [Paper Experiments](#paper-experiments)
-  - [7-Scenes](#7-scenes)
-  - [Mip-NeRF 360](#mip-nerf-360)
-  - [Tanks and Temples](#tanks-and-temples)
-- [Frequently Asked Questions](#frequently-asked-questions)
-- [References](#publications)
-
 ## Installation
 
 This code uses PyTorch and has been tested on Ubuntu 20.04 with a V100 Nvidia GPU, although it should reasonably run 
@@ -89,7 +46,7 @@ In the minimal case, you can run ACE0 on a set of images as defined by a glob pa
 
 ```shell
 # running on a set of images with default parameters
-python ace_zero.py "/path/to/some/images/*.jpg" result_folder
+python ace_zero.py "/home/caoyuanping/nerfstudio-webui/data/workspace/east_gate_low/2024_12_27_214642/east_gate_low/images/*.jpg" result_folder
 ```
 
 Note the quotes around the glob pattern to ensure it is passed to the ACE0 script rather than being expanded by the shell.
