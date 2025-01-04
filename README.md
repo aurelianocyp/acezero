@@ -40,7 +40,7 @@ We also explain how to use ACE0 to refine existing poses, or to initialise recon
 Furthermore, we cover the visualization capabilities of ACE0, including export of the reconstruction as a video and as 
 3D models.
 
-### Basic Usage
+### Basic Usage（最好用下面那个Visualization Capabilities）
 
 In the minimal case, you can run ACE0 on a set of images as defined by a glob pattern. 
 
