@@ -232,6 +232,7 @@ We provide a script for exporting ACE point clouds from a network and a pose fil
 ```shell
 python export_point_cloud.py point_cloud_out.txt --network /path/to/ace_network.pt --pose_file /path/to/poses_final.txt
 ````
+point cloud out是转化之后的文件。如果扩展名指定为ply则输出的是点云
 
 The script can either write out TXT of PLY files, decided by the file extension of the output file you specify. 
 If the output file has a .txt extension, the script will write the point cloud into a text file in the format `x y z r g b` per line for each point.
