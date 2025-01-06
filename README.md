@@ -115,6 +115,8 @@ ACE0 can visualize the reconstruction process as a video.
 python ace_zero.py "/path/to/some/images/*.jpg" result_folder --render_visualization True
 ```
 
+如果torch.hub.help()报错了去注释掉就行了
+
 With visualisation enabled, ACE0 will render individual frames in a subfolder `renderings` and call `ffmpeg` at the end.
 The visualisation will be saved as a video in the results folder, named `reconstruction.mp4`.
 
